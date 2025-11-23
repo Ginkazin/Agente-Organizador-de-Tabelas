@@ -31,6 +31,7 @@ if uploaded_file is not None and api_key:
         st.divider()
         pergunta = st.text_input("O que você quer saber ou fazer com a tabela?:")
 
+        #enviar perguntas ao agente
         if st.button("Consultar / Organizar"):
             if pergunta:
                 with st.spinner("Analisando a tabela..."):
